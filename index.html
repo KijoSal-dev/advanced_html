@@ -177,6 +177,18 @@
     Your browser does not support the video element.
 </video>
 
+<!-- JavaScript Integration -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("registrationForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevents the default form submission
+        alert("Registration successful!");
+        form.reset(); // Clears the form fields
+      });
+    });
+  </script>
+
 </body>
 </html> 
         
